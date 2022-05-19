@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <!-- 기본적으로 div 박스는 양 옆에 붙일 수 없다. -->
+      <!-- div 박스는 document 에서 봤을 때 아무런 값도 없는 박스이다. -->
+      <div>
+        <label for="website">website</label>
+        <input id="website" type="url" required />
+      </div>
+      <!-- required 필수적으로 입력해야 됨 -->
+      <div>
+        <label for="email">Email</label>
+        <input id="email" type="email" />
+      </div>
+      <div>
+        <input type="submit" value="보내기" />
+      </div>
+    </form>
+  </body>
+</html>
