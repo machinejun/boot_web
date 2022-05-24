@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        /*
+            규칙1 : 자식들을 마음대로 배치하기 위해서 부모 속성에 명시한다.
+            2. 주축 정렬( justify)
+            3. 교차축 정렬( align )
+          */
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap-reverse;
+        /* flex direction 주축방향 */
+        /* justify-content: space-between;
+        align-items: center;*/
+        height: 100vh;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: large;
+        color: black;
+        height: 200px;
+        width: 200px;
+        background-color: aqua;
+      }
+      #second {
+        background-color: yellow;
+      }
+      /*
+        flex 속성을 사용하고 싶다면 , 부모 속성이 flex가 되면 된다.
+      */
+    </style>
+  </head>
+  <body>
+    <div>1</div>
+    <div id="second">2</div>
+    <div>3</div>
+  </body>
+</html>

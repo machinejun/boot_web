@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        margin: 50px;
+      }
+
+      div {
+        height: 300px;
+        width: 300px;
+        background-color: aqua;
+        position: relative;
+        /*
+            position 기본값, static : 레이아웃 박스를 처음 위치하는 곳에 두는 것을 의미한다.
+                            relative : 처음 위치한 곳을 (0,0)으로 두고 움직인다.
+                            absolute :   absolute는 부모 위젯 기준으로 움직인다.
+                                      >> 부모가 static 이면 body를 기준으로 움직인다. but 부모가 relative면 부모를 기준으로 움직인다.
+        */
+      }
+      .green {
+        background-color: teal;
+        height: 100px;
+        width: 100px;
+        left: 5px;
+        bottom: 0px;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="green"></div>
+    </div>
+  </body>
+</html>

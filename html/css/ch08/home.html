@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 1000vh;
+      }
+
+      div {
+        position: relative;
+        height: 300px;
+        width: 300px;
+        background-color: aqua;
+      }
+
+      #different {
+        position: fixed;
+        background-color: blueviolet;
+        width: 350px;
+        left: 50px;
+        top: 50px;
+        /* 
+            position 속서을 fixed 설정을 하면 좌표값을 지정할 수 있다.
+            만약 좌표값을 하나라도 줄 경우 다른 layer 계층이 된다.
+                    
+        */
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div id="different"></div>
+  </body>
+</html>

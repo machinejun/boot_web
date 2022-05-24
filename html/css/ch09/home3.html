@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0px;
+        width: 100vmax;
+        height: 100vh;
+        background-color: gray;
+      }
+      .horizon {
+        width: 100vmax;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      #first {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 200px;
+        background-color: red;
+      }
+      #second {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 200px;
+        background-color: blue;
+      }
+      #thirth {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .vertical {
+        top: 0px;
+        position: absolute;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      #fourth {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 100vmax;
+        background-color: bisque;
+      }
+      #fifth {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 100vmax;
+        background-color: chartreuse;
+      }
+      p {
+        padding-top: 0px;
+        margin-top: 20px;
+        text-align: center;
+        color: black;
+        size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="horizon">
+      <div id="first"><p>Aside1</p></div>
+      <div id="thirth">
+        <p>
+          안녕하세요 글자가 많네요안녕하세요 글자가 많네요안녕하세요 글자가<br />
+          많네요안녕하세요 글자가 많네요안녕하세요 글자가 많네요안녕하세요
+          글자가 많네요<br />안녕하세요 글자가 많네요안녕하세요 글자가 많네요
+        </p>
+      </div>
+      <div id="second"><p>Aside2</p></div>
+    </div>
+    <div class="vertical">
+      <div id="fourth"><p>Header</p></div>
+      <div id="fifth"><p>Bottom</p></div>
+    </div>
+  </body>
+</html>
